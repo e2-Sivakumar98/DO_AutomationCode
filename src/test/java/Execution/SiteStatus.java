@@ -256,5 +256,3 @@ public class SiteStatus extends Base_class {
 //	normalClick(htmlElmentLocator1.getCancelbutton());
 //	y++;
 //}
-
-
