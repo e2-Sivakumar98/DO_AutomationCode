@@ -1,0 +1,279 @@
+package Locators;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import Base.Base_class;
+
+public class siteManagementPagelocators extends Base_class{
+	public siteManagementPagelocators() {
+
+		PageFactory.initElements(driver, this);
+// TODO Auto-generated constructor stub
+	}
+
+	@FindBy(xpath = "//div[text()='Site Administration ']")
+	private WebElement siteAdministration;
+
+	@FindBy(xpath = "//a[text()='Site Management']")
+	private WebElement siteManagement;
+
+	@FindBy(xpath = "//span[text()='Site Management']")
+	private WebElement siteManagementTitleName;
+
+	@FindBy(xpath = "//span[text()='All Partners']")
+	private WebElement allPartnerDropdownbutton;
+
+	@FindBy(xpath = "//input[@type='text']")
+	private WebElement searchbox;
+
+	@FindBy(xpath = "(//button[@type='button'])[3]")
+	private WebElement searchCancelButton;
+
+	@FindBy(xpath = "(//td[@class='MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft MuiTableCell-sizeSmall'])[1]")
+	private WebElement openSite;
+
+	@FindBy(xpath = "(//button[@type='button'])[4]")
+	private WebElement addButton;
+
+	@FindBy(id = "siteName")
+	private WebElement siteName;
+
+	@FindBy(id = "contactName")
+	private WebElement contactName;
+
+	@FindBy(id = "contactPhoneNumber")
+	private WebElement contactPhoneNumber;
+
+	@FindBy(id = "siteAddress1")
+	private WebElement siteAddress1;
+
+	@FindBy(id = "siteAddress2")
+	private WebElement siteAddress2;
+
+	@FindBy(id = "siteCity")
+	private WebElement siteCity;
+
+	@FindBy(id = "siteDistrict")
+	private WebElement siteDistrict;
+
+	@FindBy(id = "siteState")
+	private WebElement siteState;
+
+	@FindBy(id = "siteCountry")
+	private WebElement siteCountry;
+
+	@FindBy(id = "siteZipcode")
+	private WebElement siteZipcode;
+
+	@FindBy(xpath = "(//div[@role='button'])[2]")
+	private WebElement partnerNameDropdown;
+
+	@FindBy(id = "serial_number")
+	private WebElement serial_number;
+
+	@FindBy(id = "lifePumpLinkInstallDate")
+	private WebElement lifePumpLinkInstallDate;
+
+	@FindBy(xpath = "(//button[@type='button'])[7]")
+	private WebElement cancelButton;
+
+	@FindBy(id = "(//span[@role='button'])[11]")
+	private WebElement assignIconButton;
+
+	@FindBy(id = "(//span[@role='button'])[10]")
+	private WebElement installationReportIconButton;
+
+	@FindBy(xpath = "(//button[@type='button'])[9]")
+	private WebElement assignButton;
+
+	@FindBy(xpath = "//button[@type='submit']")
+	private WebElement updateSiteButton;
+
+	@FindBy(xpath = "(//button[@type='button'])[11]")
+	private WebElement deleteSiteButton;
+
+	@FindBy(xpath = "//span[text()='Site created successfully']")
+	private WebElement siteCreatedSuccessMessage;
+
+	@FindBy(xpath = "//span[text()='Site Details updated successfully']")
+	private WebElement siteUpdatedSuccessMessage;
+
+	@FindBy(xpath = "(//button[@type='button'])[8]")
+	private WebElement okButton;
+
+	@FindBy(xpath = "//span[text()='Site deleted successfully']")
+	private WebElement siteDeletedSuccessMessage;
+
+
+	@FindBy(xpath = "(//td[@class='MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft MuiTableCell-sizeSmall'])[1]")
+	private WebElement createdSite;
+
+	@FindBy(xpath = "(//button[@type='button'])[6]")
+	private WebElement siteDetailsTabButton;
+
+	@FindBy(xpath = "(//button[@type='button'])[7]")
+	private WebElement pumpDetailsTabButton;
+
+	@FindBy(xpath = "(//button[@type='button'])[8]")
+	private WebElement testimonyTabButton;
+
+	@FindBy(xpath = "(//button[@type='button'])[8]")
+	private WebElement SirPopupCancelButton;
+
+	@FindBy(xpath = "//div[@class='uil-ring-css']")
+	private WebElement loadingRing;
+
+
+	public WebElement getLoadingRing() {
+		return loadingRing;
+	}
+
+	public WebElement getSiteAdministration() {
+		return siteAdministration;
+	}
+
+	public WebElement getSiteManagement() {
+		return siteManagement;
+	}
+
+	public WebElement getSiteManagementTitleName() {
+		return siteManagementTitleName;
+	}
+
+	public WebElement getAllPartnerDropdownbutton() {
+		return allPartnerDropdownbutton;
+	}
+
+	public WebElement getSearchbox() {
+		return searchbox;
+	}
+
+	public WebElement getSearchCancelButton() {
+		return searchCancelButton;
+	}
+
+	public WebElement getAddButton() {
+		return addButton;
+	}
+
+	public WebElement getOpenSite() {
+		return openSite;
+	}
+
+	public WebElement getSiteName() {
+		return siteName;
+	}
+
+	public WebElement getContactName() {
+		return contactName;
+	}
+
+	public WebElement getContactPhoneNumber() {
+		return contactPhoneNumber;
+	}
+
+	public WebElement getSiteAddress1() {
+		return siteAddress1;
+	}
+
+	public WebElement getSiteAddress2() {
+		return siteAddress2;
+	}
+
+	public WebElement getSiteCity() {
+		return siteCity;
+	}
+
+	public WebElement getSiteDistrict() {
+		return siteDistrict;
+	}
+
+	public WebElement getSiteState() {
+		return siteState;
+	}
+
+	public WebElement getSiteCountry() {
+		return siteCountry;
+	}
+
+	public WebElement getSiteZipcode() {
+		return siteZipcode;
+	}
+
+	public WebElement getPartnerNameDropdown() {
+		return partnerNameDropdown;
+	}
+
+	public WebElement getSerial_number() {
+		return serial_number;
+	}
+
+	public WebElement getLifePumpLinkInstallDate() {
+		return lifePumpLinkInstallDate;
+	}
+
+	public WebElement getCancelButton() {
+		return cancelButton;
+	}
+
+	public WebElement getAssignIconButton() {
+		return assignIconButton;
+	}
+
+	public WebElement getInstallationReportIconButton() {
+		return installationReportIconButton;
+	}
+
+	public WebElement getAssignButton() {
+		return assignButton;
+	}
+
+	public WebElement getUpdateSiteButton() {
+		return updateSiteButton;
+	}
+
+	public WebElement getDeleteSiteButton() {
+		return deleteSiteButton;
+	}
+
+	public WebElement getSiteCreatedSuccessMessage() {
+		return siteCreatedSuccessMessage;
+	}
+
+	public WebElement getSiteUpdatedSuccessMessage() {
+		return siteUpdatedSuccessMessage;
+	}
+
+	public WebElement getOkButton() {
+		return okButton;
+	}
+
+	public WebElement getSiteDeletedSuccessMessage() {
+		return siteDeletedSuccessMessage;
+
+	}
+
+	public WebElement getCreatedSite() {
+		return createdSite;
+	}
+
+	public WebElement getSiteDetailsTabButton() {
+		return siteDetailsTabButton;
+	}
+
+	public WebElement getPumpDetailsTabButton() {
+		return pumpDetailsTabButton;
+	}
+
+	public WebElement getTestimonyTabButton() {
+		return testimonyTabButton;
+	}
+
+	public WebElement getSirPopupCancelButton() {
+		return SirPopupCancelButton;
+	}
+
+
+}
